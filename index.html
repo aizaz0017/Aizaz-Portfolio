@@ -11,15 +11,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="scene-glow scene-glow-left"></div>
+    <div class="scene-glow scene-glow-right"></div>
+    <div class="scene-grid"></div>
+
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="#top" aria-label="Homepage">AS</a>
+        <a class="brand" href="#top" aria-label="Homepage">
+          <span>AS</span>
+        </a>
         <button
           class="menu-toggle"
           type="button"
@@ -30,8 +36,8 @@
         </button>
         <nav class="site-nav" id="site-nav" aria-label="Primary">
           <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#skills">Skills</a>
+          <a href="#work">Projects</a>
+          <a href="#skills">Systems</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -39,41 +45,76 @@
       <main id="top">
         <section class="hero section">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Unity Game Developer</p>
-            <h1>
-              Building immersive games and interactive worlds across mobile, web, AR, VR, and multiplayer.
-            </h1>
+            <p class="eyebrow">Unity Multiplayer and XR Developer</p>
+            <h1>Designing combat loops, world systems, and immersive gameplay that holds up under pressure.</h1>
             <p class="hero-text">
-              I am Aizaz Ahmad Saifi, a Unity developer with hands-on experience
-              in 2D, 3D, multiplayer, and XR development. I focus on polished
-              gameplay, stable performance, and systems that scale cleanly.
+              I am Aizaz Ahmad Saifi, a game developer focused on Unity, Photon
+              Fusion, and high-performance gameplay systems across multiplayer,
+              AR, VR, and interactive products.
             </p>
+
             <div class="hero-actions">
-              <a class="button button-primary" href="#work">View Projects</a>
-              <a class="button button-secondary" href="#contact">Let&apos;s Talk</a>
+              <a class="button button-primary" href="#work">Explore Projects</a>
+              <a class="button button-secondary" href="#contact">Hire Me</a>
+            </div>
+
+            <div class="hero-stats">
+              <article class="stat-tile">
+                <span class="stat-label">Live Sessions</span>
+                <strong>50+ Players</strong>
+              </article>
+              <article class="stat-tile">
+                <span class="stat-label">Performance Target</span>
+                <strong>60 FPS</strong>
+              </article>
+              <article class="stat-tile">
+                <span class="stat-label">Core Modes</span>
+                <strong>2D / 3D / XR</strong>
+              </article>
             </div>
           </div>
 
-          <div class="hero-panel reveal">
-            <div class="panel-card panel-intro">
-              <span class="panel-label">Now</span>
-              <p>Shipping interactive slot games and gameplay systems at Arrise Solutions.</p>
-            </div>
-            <div class="panel-grid">
-              <article class="panel-card">
-                <span class="panel-label">Focus</span>
-                <strong>Unity and Multiplayer</strong>
-                <p>Gameplay systems, Photon Fusion, performance tuning, and cross-platform delivery.</p>
+          <div class="hero-hud reveal">
+            <section class="hud-frame hud-main">
+              <div class="hud-header">
+                <span class="hud-kicker">Developer Profile</span>
+                <span class="status-pill">Online</span>
+              </div>
+              <div class="hud-radar">
+                <div class="radar-ring radar-ring-one"></div>
+                <div class="radar-ring radar-ring-two"></div>
+                <div class="radar-ring radar-ring-three"></div>
+                <div class="radar-sweep"></div>
+                <div class="radar-core"></div>
+              </div>
+              <div class="hud-readout">
+                <div>
+                  <span>Current Role</span>
+                  <strong>SDE 1 at Arrise Solutions</strong>
+                </div>
+                <div>
+                  <span>Base</span>
+                  <strong>Greater Noida, UP</strong>
+                </div>
+              </div>
+            </section>
+
+            <div class="hero-panels">
+              <article class="hud-frame">
+                <span class="hud-kicker">Current Loadout</span>
+                <ul class="hud-list">
+                  <li>Unity 3D gameplay systems</li>
+                  <li>Photon Fusion networking</li>
+                  <li>AR and VR interactions</li>
+                </ul>
               </article>
-              <article class="panel-card">
-                <span class="panel-label">Based In</span>
-                <strong>Greater Noida, UP</strong>
-                <p>Open to game development roles, product teams, and ambitious interactive projects.</p>
-              </article>
-              <article class="panel-card accent-card">
-                <span class="panel-label">Selected Result</span>
-                <strong>50+ Players</strong>
-                <p>Built server-authoritative multiplayer gameplay targeting stable 60 FPS in live combat scenarios.</p>
+              <article class="hud-frame accent-frame">
+                <span class="hud-kicker">Mission Log</span>
+                <p>
+                  Building slot game systems with buy feature flows, big win
+                  presentation, character animation hooks, reusable modules, and
+                  gameplay logic that can move cleanly from Unity/C# to web delivery.
+                </p>
               </article>
             </div>
           </div>
@@ -81,22 +122,37 @@
 
         <section class="section about" id="about">
           <div class="section-heading reveal">
-            <p class="eyebrow">About</p>
-            <h2>Clear thinking, bold visuals, and practical execution.</h2>
+            <p class="eyebrow">Player One</p>
+            <h2>Gameplay-first engineering with a strong feel for systems, pacing, and stability.</h2>
           </div>
-          <div class="about-grid">
+
+          <div class="about-layout">
             <article class="about-card reveal">
+              <span class="card-label">Profile</span>
               <p>
-                I build gameplay experiences that balance technical reliability
-                with player engagement. My background covers core mechanics,
-                multiplayer networking, AR interactions, UI, and optimization.
+                I build game experiences that need more than visuals. My work
+                focuses on mechanics, responsive controls, multiplayer state,
+                optimized scenes, and systems that stay solid when the action
+                gets heavy.
               </p>
             </article>
+
             <article class="about-card reveal">
+              <span class="card-label">Trajectory</span>
               <p>
-                I currently work as an SDE 1 at Arrise Solutions and previously
-                spent two years at IXR Labs building 3D, multiplayer, and medical
-                simulation products using Unity and C#.
+                At IXR Labs, I worked on 3D, multiplayer, and medical
+                applications. At Arrise Solutions, I now build interactive game
+                experiences including slot systems, smoother flows, reusable
+                modules, and web-ready gameplay logic.
+              </p>
+            </article>
+
+            <article class="about-card reveal">
+              <span class="card-label">What I Bring</span>
+              <p>
+                Strong Unity scripting, practical networking knowledge, clean
+                technical execution, and a mindset that balances player
+                experience with performance budgets.
               </p>
             </article>
           </div>
@@ -104,99 +160,249 @@
 
         <section class="section work" id="work">
           <div class="section-heading reveal">
-            <p class="eyebrow">Selected Work</p>
-            <h2>Projects that show gameplay depth, technical range, and real delivery.</h2>
+            <p class="eyebrow">Featured Missions</p>
+            <h2>Projects shaped around multiplayer intensity, simulation clarity, and survival systems.</h2>
           </div>
-          <div class="project-grid">
-            <article class="project-card reveal">
-              <div class="project-number">01</div>
-              <h3>Vulcan Royale</h3>
+
+          <div class="mission-console reveal">
+            <div class="mission-console-copy">
+              <span class="card-label">Mission Archive</span>
               <p>
-                Multiplayer battle royale project built with server-authoritative
-                networking, a safe zone system, combat feedback, and performance
-                optimization for stable large-session gameplay.
+                Tap into the project database like a game terminal. Initialize
+                the archive, then select a mission card to focus the loadout.
               </p>
-              <ul class="tag-list">
-                <li>Unity</li>
-                <li>C#</li>
-                <li>Photon Fusion</li>
-              </ul>
-              <a href="#contact" aria-label="Ask about Vulcan Royale project">Ask Me About It</a>
+            </div>
+            <div class="mission-console-actions">
+              <button class="button button-primary mission-trigger" type="button" aria-controls="project-grid">
+                Initialize Archive
+              </button>
+              <p class="mission-status" aria-live="polite">Archive locked. Press initialize to reveal missions.</p>
+            </div>
+          </div>
+
+          <div class="project-grid project-grid-locked" id="project-grid" aria-hidden="true">
+            <article class="project-card reveal mission-card" data-mission="Vulcan Royale" tabindex="0" role="button" aria-pressed="false">
+              <div class="project-visual project-visual-royale">
+                <span class="project-index">01</span>
+                <span class="project-mode">Battle Royale</span>
+                <strong class="project-title">Vulcan Royale</strong>
+              </div>
+              <div class="project-body">
+                <h3>Vulcan Royale</h3>
+                <p>
+                  Server-authoritative multiplayer game with safe zone logic,
+                  combat feedback, and optimized session handling for 50+ players.
+                </p>
+                <ul class="impact-list">
+                  <li>Built with Photon Fusion and Unity C#</li>
+                  <li>Targeted stable 60 FPS during combat</li>
+                  <li>Supported cross-platform gameplay stability</li>
+                </ul>
+                <ul class="tag-list">
+                  <li>Unity</li>
+                  <li>Photon Fusion</li>
+                  <li>Networking</li>
+                </ul>
+              </div>
             </article>
 
-            <article class="project-card reveal">
-              <div class="project-number">02</div>
-              <h3>Lead School AR</h3>
-              <p>
-                AR education experience designed to improve student immersion with
-                stronger tracking stability, interactive modules, and 60 FPS
-                performance during 3D learning simulations.
-              </p>
-              <ul class="tag-list">
-                <li>Unity</li>
-                <li>AR</li>
-                <li>AR Foundation</li>
-              </ul>
-              <a href="#contact" aria-label="Ask about Lead School AR project">Ask Me About It</a>
+            <article class="project-card reveal mission-card" data-mission="Lead School AR" tabindex="0" role="button" aria-pressed="false">
+              <div class="project-visual project-visual-ar">
+                <span class="project-index">02</span>
+                <span class="project-mode">AR Education</span>
+                <strong class="project-title">Lead School AR</strong>
+              </div>
+              <div class="project-body">
+                <h3>Lead School AR</h3>
+                <p>
+                  Interactive AR learning modules designed for reliable tracking,
+                  stronger engagement, and comfortable real-time 3D education scenes.
+                </p>
+                <ul class="impact-list">
+                  <li>Improved tracking accuracy across varied surfaces</li>
+                  <li>Kept complex 3D simulations at 60 FPS</li>
+                  <li>Focused on student immersion and longer sessions</li>
+                </ul>
+                <ul class="tag-list">
+                  <li>AR Foundation</li>
+                  <li>Unity</li>
+                  <li>XR Interaction</li>
+                </ul>
+              </div>
             </article>
 
-            <article class="project-card reveal">
-              <div class="project-number">03</div>
-              <h3>Apocalypse Reckoning</h3>
-              <p>
-                Survival game featuring AI state machines, NavMesh-driven enemy
-                behavior, modular inventory and crafting systems, and optimized
-                large-scale 3D environments.
-              </p>
-              <ul class="tag-list">
-                <li>Unity</li>
-                <li>AI Systems</li>
-                <li>Optimization</li>
-              </ul>
-              <a href="#contact" aria-label="Ask about Apocalypse Reckoning project">Ask Me About It</a>
+            <article class="project-card reveal mission-card" data-mission="Apocalypse Reckoning" tabindex="0" role="button" aria-pressed="false">
+              <div class="project-visual project-visual-survival">
+                <span class="project-index">03</span>
+                <span class="project-mode">Survival Systems</span>
+                <strong class="project-title">Apocalypse Reckoning</strong>
+              </div>
+              <div class="project-body">
+                <h3>Apocalypse Reckoning</h3>
+                <p>
+                  Survival experience with AI state machines, modular inventory,
+                  crafting loops, and environment optimization for large-scale 3D scenes.
+                </p>
+                <ul class="impact-list">
+                  <li>Managed 50+ active AI agents efficiently</li>
+                  <li>Reduced memory pressure with modular data structures</li>
+                  <li>Used LOD and occlusion culling for consistent FPS</li>
+                </ul>
+                <ul class="tag-list">
+                  <li>AI Systems</li>
+                  <li>NavMesh</li>
+                  <li>Optimization</li>
+                  <li>Level Design</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card reveal mission-card" data-mission="Slot Machine Game" tabindex="0" role="button" aria-pressed="false">
+              <div class="project-visual project-visual-slot">
+                <span class="project-index">04</span>
+                <span class="project-mode">Slot Game</span>
+                <strong class="project-title">Slot Machine Game</strong>
+              </div>
+              <div class="project-body">
+                <h3>Slot Machine Game</h3>
+                <p>
+                  2D slot machine experience built around smooth reel behavior,
+                  clear reward pacing, and polished casino-style presentation for
+                  repeat play.
+                </p>
+                <ul class="impact-list">
+                  <li>Built the core slot loop with reel logic, symbol matching, payout patterns, and responsive spin flow</li>
+                  <li>Implemented adjustable betting, buy feature flow, and feature-entry control for faster player access</li>
+                  <li>Designed big win moments with layered UI, reward pacing, and celebratory feedback presentation</li>
+                  <li>Integrated character animations, transition effects, and modular systems for cleaner feature expansion</li>
+                </ul>
+                <ul class="tag-list">
+                  <li>Unity 2D</li>
+                  <li>Game UI</li>
+                  <li>Animation</li>
+                </ul>
+              </div>
             </article>
           </div>
         </section>
 
         <section class="section skills" id="skills">
           <div class="section-heading reveal">
-            <p class="eyebrow">Capabilities</p>
-            <h2>Technical strengths across gameplay, networking, and interactive platforms.</h2>
+            <p class="eyebrow">Core Systems</p>
+            <h2>The tools, engines, and patterns I rely on when building real-time experiences.</h2>
           </div>
-          <div class="skills-layout">
-            <div class="skills-list reveal">
-              <span>Unity 2D / 3D</span>
-              <span>C# Gameplay Programming</span>
-              <span>Photon Fusion</span>
-              <span>AR / VR Development</span>
-              <span>Meta Quest</span>
-              <span>REST API Integration</span>
-              <span>Git and SourceTree</span>
-              <span>JavaScript</span>
-              <span>State Synchronization</span>
-              <span>Performance Optimization</span>
-            </div>
-            <aside class="note-card reveal">
-              <p class="note-title">Experience</p>
+
+          <div class="systems-layout">
+            <article class="systems-panel reveal">
+              <span class="card-label">Primary Stack</span>
+              <div class="skills-list">
+                <span>Unity 2D / 3D</span>
+                <span>C# Gameplay Programming</span>
+                <span>Photon Fusion</span>
+                <span>AR / VR Development</span>
+                <span>Meta Quest</span>
+                <span>REST API Integration</span>
+                <span>Git and SourceTree</span>
+                <span>JavaScript</span>
+                <span>State Synchronization</span>
+                <span>Performance Optimization</span>
+              </div>
+            </article>
+
+            <article class="systems-panel reveal">
+              <span class="card-label">Career Log</span>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">May 2025 - Present</span>
+                  <h3>Arrise Solutions</h3>
+                  <p>
+                    Developing slot games with buy feature systems, big win flows,
+                    animation-driven feedback, modular gameplay features, and
+                    logic migration workflows from Unity/C# to JavaScript.
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-date">June 2023 - May 2025</span>
+                  <h3>IXR Labs</h3>
+                  <p>
+                    Built 3D, multiplayer, and medical application experiences
+                    with maintainable Unity systems and production collaboration.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section arcade" id="arcade">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Playable Demo</p>
+            <h2>Try a quick playable interaction before the final mission screen.</h2>
+          </div>
+
+          <div class="arcade-layout">
+            <article class="systems-panel reveal arcade-copy">
+              <span class="card-label">Core Runner</span>
               <p>
-                SDE 1 at Arrise Solutions since May 2025, after building 3D,
-                multiplayer, and medical simulation products at IXR Labs from
-                June 2023 to May 2025.
+                A lightweight arcade challenge built for the portfolio. Move,
+                collect energy cores, avoid glitch shards, and get a quick feel
+                for the kind of interactive moments I like building.
               </p>
-            </aside>
+              <ul class="impact-list arcade-list">
+                <li>Use <strong>A</strong> / <strong>D</strong> or arrow keys to move</li>
+                <li>On touch devices, drag left and right inside the arena</li>
+                <li>Collect cyan cores for points and avoid red hazards</li>
+                <li>Survive the full run timer to complete the mission</li>
+              </ul>
+            </article>
+
+            <div class="systems-panel reveal arcade-panel">
+              <div class="arcade-hud">
+                <div class="arcade-stat">
+                  <span class="stat-label">Score</span>
+                  <strong id="arcade-score">0</strong>
+                </div>
+                <div class="arcade-stat">
+                  <span class="stat-label">Time</span>
+                  <strong id="arcade-time">25</strong>
+                </div>
+                <div class="arcade-stat">
+                  <span class="stat-label">Status</span>
+                  <strong id="arcade-status">Standby</strong>
+                </div>
+              </div>
+
+              <canvas
+                id="mini-game"
+                class="arcade-canvas"
+                width="480"
+                height="320"
+                aria-label="Playable mini game"
+              ></canvas>
+
+              <div class="arcade-actions">
+                <button class="button button-primary arcade-trigger" type="button">
+                  Start Run
+                </button>
+                <p class="mission-status arcade-note">
+                  Mission briefing loaded. Launch the run to start the game.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="section contact" id="contact">
           <div class="contact-card reveal">
-            <p class="eyebrow">Contact</p>
-            <h2>Interested in building a game, simulation, or immersive product together?</h2>
+            <p class="eyebrow">Next Mission</p>
+            <h2>Looking for a developer who can build gameplay systems that feel good and scale cleanly?</h2>
             <p>
               Reach out at
-              <a href="mailto:aizaz95555@gmail.com">aizaz95555@gmail.com</a>
-              or call
-              <a href="tel:+919555505398">+91 95555 05398</a>.
-              Based in Greater Noida and available for game development opportunities.
+              <a href="mailto:aizaz95555@gmail.com">aizaz95555@gmail.com</a>,
+              call
+              <a href="tel:+919555505398">+91 95555 05398</a>,
+              or connect with me for Unity, multiplayer, XR, and interactive
+              product opportunities.
             </p>
           </div>
         </section>
@@ -204,7 +410,7 @@
     </div>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Aizaz Ahmad Saifi. Built with intention.</p>
+      <p>&copy; <span id="year"></span> Aizaz Ahmad Saifi. Game systems, multiplayer, and immersive experiences.</p>
     </footer>
 
     <script src="script.js"></script>
